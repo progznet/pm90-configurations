@@ -20,6 +20,8 @@ eureka:
             version: ${info.project.version}
             
 ribbon:
+    ConnectTimeout: 12000
+    ReadTimeout: 180000
     eureka:
         enabled: true
 
