@@ -26,7 +26,7 @@ zuul:
     host:
         max-total-connections: 1000
         max-per-route-connections: 100
-        connect-timeout-millis: 10000
+        connect-timeout-millis: 12000
         socket-timeout-millis: 180000
     semaphore:
         max-semaphores: 500
@@ -37,7 +37,7 @@ hystrix:
             execution:
                 isolation:
                     thread:
-                        timeoutInMilliseconds: 30000
+                        timeoutInMilliseconds: 180000
 
 management:
     security:
