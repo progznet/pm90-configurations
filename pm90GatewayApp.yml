@@ -39,7 +39,7 @@ hystrix:
             execution:
                 isolation:
                     thread:
-                        timeoutInMilliseconds: 180000
+                        timeoutInMilliseconds: 900000
 
 management:
     security:
