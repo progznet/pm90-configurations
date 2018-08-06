@@ -21,7 +21,7 @@ eureka:
             
 ribbon:
     ConnectTimeout: 12000
-    ReadTimeout: 180000
+    ReadTimeout: 900000
     eureka:
         enabled: true
 
