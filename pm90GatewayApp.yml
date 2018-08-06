@@ -20,7 +20,7 @@ eureka:
             version: ${info.project.version}
 ribbon:
     ConnectTimeout: 12000
-    ReadTimeout: 180000
+    ReadTimeout: 900000
     eureka:
         enabled: true
 
@@ -29,7 +29,7 @@ zuul:
         max-total-connections: 1000
         max-per-route-connections: 100
         connect-timeout-millis: 12000
-        socket-timeout-millis: 180000
+        socket-timeout-millis: 900000
     semaphore:
         max-semaphores: 500
 
